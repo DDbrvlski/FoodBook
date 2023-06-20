@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aA75WpJCFQoz1etxpsHUvGYENiESQow3VUoR8lYTBcY=",
+  "Source": "FoodBookAPI",
+  "BasePath": "_content/FoodBookAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

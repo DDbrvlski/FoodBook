@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.IngredientsV.EditIngredientsPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="Edit Item">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="../Styles.xaml"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource SwiftStack}" >
+            <Frame Style="{StaticResource SwiftFrame}">
+                <ScrollView>
+                    <StackLayout Padding="0">
+                        <FlexLayout AlignContent="Start" JustifyContent="SpaceBetween" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                            <Label Style="{StaticResource TitleLabel}" Text="Edit ingredient"/>
+                            <Button ImageSource="Pics/close.png" BackgroundColor="Transparent" Command="{Binding CancelCommand}">
+                            </Button>
+                        </FlexLayout>
+                        <BoxView Margin="10,0,10,0" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Title:"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding Title, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Text="Calories:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="1" Grid.Column="0" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Kcal, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                                <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Text="Fats:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="1" Grid.Column="1" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Fats, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                                <Label Grid.Row="2" Grid.Column="0" VerticalOptions="Center" Text="Proteins:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="3" Grid.Column="0" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Proteins, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                                <Label Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Text="Carbs:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="3" Grid.Column="1" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Carbs, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                                <Label Grid.Row="4" Grid.Column="0" VerticalOptions="Center" Text="Salt:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="5" Grid.Column="0" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Salt, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                                <Label Grid.Row="4" Grid.Column="1" VerticalOptions="Center"  Text="Sugars:" FontSize="20" Style="{StaticResource DefaultLabel}"/>
+                                <Frame Grid.Row="5" Grid.Column="1" Style="{StaticResource EntryFrame}">
+                                    <Entry Text="{Binding Sugar, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                </Frame>
+                            </Grid>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Amount:"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding AmountOfUnit, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Label Text="Unit type:" Style="{StaticResource DefaultLabel}"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Picker
+                                    Style="{StaticResource DefaultPicker}"
+                                    ItemsSource="{Binding UnitsList}"
+                                    SelectedItem="{Binding Id, Mode=TwoWay}"
+                                    ItemDisplayBinding="{Binding Title, Mode=TwoWay}"
+                                    SelectedIndex="{Binding IdUnitOfMeasurement, Mode=TwoWay}">
+                                </Picker>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="10,10,10,5">
+                            <Button Style="{StaticResource CancelButton}" Text="Cancel" Command="{Binding CancelCommand}"></Button>
+                            <Button Style="{StaticResource DefaultButton}" Text="Save" Command="{Binding SaveCommand}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

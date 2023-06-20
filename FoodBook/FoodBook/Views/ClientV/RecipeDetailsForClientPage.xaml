@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="{Binding Title}"
+             x:Class="FoodBook.Views.ClientV.RecipeDetailsForClientPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="../Styles.xaml"/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView Background="{StaticResource Secondary}">
+            <StackLayout Background="{StaticResource Secondary}">
+
+                <RelativeLayout Background="{StaticResource Secondary}" Margin="0" HeightRequest="300" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                    <Image Background="{StaticResource Secondary}" Source="{Binding ImageURL, Mode=TwoWay}" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                    <Button Padding="5"  ImageSource="Pics/close.png" BackgroundColor="{StaticResource Triary}" CornerRadius="60" Command="{Binding CancelCommand}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=20}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=20}"
+                     />
+                </RelativeLayout>
+                <StackLayout Padding="15" BackgroundColor="{StaticResource Secondary}" Margin="0">
+                    <Label Text="{Binding Title, Mode=TwoWay}" Style="{StaticResource DefaultLabel}" Margin="0,0,0,5" FontSize="28"/>
+                    <StackLayout Orientation="Horizontal" Margin="0,10,0,10">
+
+                        <Grid Margin="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="Pics/timer.png"/>
+                            <StackLayout Grid.Column="1" Margin="2">
+                                <Label Text="{Binding MakingTime, Mode=TwoWay}" FontSize="22" TextColor="White"/>
+                                <Label Text="Minutes" FontSize="14" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+
+                        <BoxView Margin="10,0,10,0" BackgroundColor="#555" WidthRequest="1" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+
+                        <Grid Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="Pics/calories.png" />
+                            <StackLayout Grid.Column="1" Margin="2">
+                                <Label Text="{Binding Kcal, Mode=TwoWay}" FontSize="22" TextColor="White"/>
+                                <Label Text="Calories" FontSize="14" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+
+                        <BoxView Margin="10,0,10,0" BackgroundColor="#555" WidthRequest="1" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+                        <Grid Margin="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="Pics/levels.png"/>
+                            <StackLayout Grid.Column="1" Margin="2">
+                                <Label Text="{Binding DifficultyName, Mode=TwoWay}" FontSize="22" TextColor="White"/>
+                                <Label Text="Difficulty" FontSize="14" TextColor="White"/>
+                            </StackLayout>
+                        </Grid>
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Style="{StaticResource BoldLabel}" Text="{Binding DishTypeTitle, Mode=TwoWay}" />
+                        <Label Style="{StaticResource BoldLabel}" Text="-" />
+                        <Label Style="{StaticResource BoldLabel}" Text="{Binding CuisineTypeTitle, Mode=TwoWay}" />
+                    </StackLayout>
+                    <BoxView Margin="0,10,0,10" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                    <Label Text="Ingredients" FontSize="20" Margin="5" TextColor="White"/>
+                    <StackLayout Orientation="Horizontal" Padding="5" IsEnabled="False">
+                        <ListView ItemsSource="{Binding IngredientsForRecipeForView}" HeightRequest="{Binding HeightNumberForIngredients}" RowHeight="35">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell IsEnabled="False">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Title, Mode=TwoWay}" FontSize="18" TextColor="White" Margin="2"/>
+                                            <Label Text="-" FontSize="18" TextColor="White" Margin="2"/>
+                                            <Label Text="{Binding AmountOfUnit, Mode=TwoWay}" FontSize="18" TextColor="White" Margin="2"/>
+                                            <Label Text="{Binding UnitTitle, Mode=TwoWay}" FontSize="18" TextColor="White" Margin="2"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+
+
+                    <BoxView Margin="0,10,0,10" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                    <Label Text="Recipe steps" FontSize="20" Margin="5" TextColor="White"/>
+                    <StackLayout Orientation="Horizontal" Padding="5" IsEnabled="False">
+                        <ListView ItemsSource="{Binding StepsForView}" HeightRequest="{Binding HeightNumberForSteps}" RowHeight="100">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell IsEnabled="False">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="35"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="35"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Button Text="{Binding Position}" Background="#3F579D" CornerRadius="20" FontAttributes="Bold"/>
+                                            <Label Grid.Column="1" Grid.RowSpan="2" Text="{Binding Description, Mode=TwoWay}" FontSize="18" TextColor="White" Margin="2"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+
+                    <BoxView Margin="0,10,0,10" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                    <Label Text="Nutritions" FontSize="20" Margin="5" TextColor="White"/>
+                    <ScrollView Orientation="Horizontal" Padding="10" Margin="0,10,0,10">
+                        <StackLayout Orientation="Horizontal">
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Calories" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Kcal, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Proteins" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Proteins, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Fats" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Fats, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Carbs" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Carbs, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Sugars" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Sugar, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame CornerRadius="50" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="5" BackgroundColor="#3F579D">
+                                <StackLayout VerticalOptions="Center">
+                                    <Label FontAttributes="Bold" Text="Salt" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Salt, Mode=TwoWay}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

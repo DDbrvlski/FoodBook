@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.ClientV.CustomControll.DishTypeCustomControl"
+             xmlns:local="clr-namespace:FoodBook.ViewModels.ClientVM"  
+             xmlns:model="clr-namespace:FoodBook.Service.Reference" 
+             x:Name="BrowseItemsPage">
+    <ContentView.Content>
+        <RefreshView x:DataType="local:DishesViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="Single"
+                HeightRequest="130">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="0" x:DataType="model:DishTypeForView" Orientation="Horizontal">
+                            <RelativeLayout BackgroundColor="White" WidthRequest="200" HeightRequest="100">
+                                <Image Source="{Binding ImageURL}" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                                <BoxView BackgroundColor="#000" Opacity="0.7" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                                <Label FontFamily="Roboto" Text="{Binding Title}" FontSize="18" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+                            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+                            RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                            RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}"/>
+                            </RelativeLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:DishesViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+            </CollectionView>
+
+        </RefreshView>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.ClientV.CustomControll.LatestRecipesCustomControl"
+             xmlns:local="clr-namespace:FoodBook.ViewModels.ClientVM"
+             xmlns:model="clr-namespace:FoodBook.Service.Reference" 
+             x:Name="BrowseItemsPage">
+    <ContentView.Content>
+        <RefreshView x:DataType="local:RecipeForAboutPageViewModel"  Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="ItemsListView"
+                SelectionMode="Single"
+                ItemsSource="{Binding Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Background="white" x:DataType="model:RecipeForView" Margin="0" Orientation="Horizontal">
+                            <RelativeLayout BackgroundColor="White" WidthRequest="200" HeightRequest="260">
+                                <Image Source="{Binding ImageURL}" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                                <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                                    <BoxView.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                            <GradientStop Offset="1" Color="#000000" />
+                                            <GradientStop Offset="0" Color="#00000000" />
+                                        </LinearGradientBrush>
+                                    </BoxView.Background>
+                                </BoxView>
+                                <Label Text="{Binding Title}" TextColor="White" FontSize="18" 
+                        RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=20}"
+                        RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-40}"
+                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}" />
+                            </RelativeLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:RecipeForAboutPageViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </ContentView.Content>
+</ContentView>

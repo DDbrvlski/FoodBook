@@ -1,0 +1,74 @@
+﻿Wyciete z AboutPage'a
+
+<Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <RelativeLayout Grid.Column="0" BackgroundColor="White" WidthRequest="200" HeightRequest="100">
+                            <RelativeLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenWebCommand}"/>
+                            </RelativeLayout.GestureRecognizers>
+                            <Image Source="https://iili.io/H4N8mU7.jpg" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                            <BoxView BackgroundColor="#000000" Opacity="0.7" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+
+                            <Label Text="Dinner" FontSize="18" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+                                RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                                RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}" 
+                            />
+                        </RelativeLayout>
+
+                        <RelativeLayout Grid.Column="1" BackgroundColor="White" WidthRequest="200" HeightRequest="100">
+                            <RelativeLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenWebCommand}"/>
+                            </RelativeLayout.GestureRecognizers>
+                            <Image Source="https://iili.io/H4NS2xj.jpg" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                            <BoxView BackgroundColor="#000000" Opacity="0.7" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+
+                            <Label Text="Dessert" FontSize="18" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+                                RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                                RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}" 
+                            />
+                        </RelativeLayout>
+
+                        <RelativeLayout Grid.Column="2" BackgroundColor="White" WidthRequest="200" HeightRequest="100">
+                            <RelativeLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenWebCommand}"/>
+                            </RelativeLayout.GestureRecognizers>
+                            <Image Source="https://iili.io/H4N86Rn.jpg" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                            <BoxView BackgroundColor="#000000" Opacity="0.7" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+
+                            <Label Text="Soup" FontSize="18" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+                                RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                                RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}" 
+                            />
+                        </RelativeLayout>
+
+                        <RelativeLayout Grid.Column="4" BackgroundColor="White" WidthRequest="200" HeightRequest="100">
+                            <RelativeLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenWebCommand}"/>
+                            </RelativeLayout.GestureRecognizers>
+                            <Image Source="https://iili.io/H4N8SKN.jpg" Aspect="AspectFill" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+                            <BoxView BackgroundColor="#000000" Opacity="0.7" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}" />
+
+                            <Label Text="Rice" FontSize="18" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+                                RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                                RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Constant=50}" 
+                            />
+
+                        </RelativeLayout>
+
+
+                    </Grid>

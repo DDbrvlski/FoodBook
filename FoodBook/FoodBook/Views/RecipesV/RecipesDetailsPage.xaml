@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.RecipesV.RecipesDetailsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="../Styles.xaml"/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource SwiftStack}">
+            <Frame Style="{StaticResource SwiftFrame}">
+                <ScrollView>
+                    <StackLayout Padding="0">
+                        <FlexLayout AlignContent="Start" JustifyContent="SpaceBetween" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                            <Label Style="{StaticResource TitleLabel}" Text="Recipe details"/>
+                            <Button ImageSource="Pics/close.png" BackgroundColor="Transparent" Command="{Binding CancelCommand}">
+                            </Button>
+                        </FlexLayout>
+                        <BoxView Margin="10,0,10,0" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                        <Frame Style="{StaticResource ClippingCornerFrame}" Margin="5">
+                            <Image Source="{Binding ImageURL, Mode=TwoWay}" Style="{StaticResource ClippedCornerImage}"
+                         RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}" />
+                        </Frame>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Text="ID:" Style="{StaticResource BoldLabel}"/>
+                            <Label Text="{Binding Id, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Text="Name:" Style="{StaticResource BoldLabel}"/>
+                            <Label Text="{Binding Title, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Style="{StaticResource BoldLabel}" Text="Preparation time:" />
+                            <Label Text="{Binding MakingTime, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Style="{StaticResource BoldLabel}" Text="Cuisine type:" />
+                            <Label Text="{Binding CuisineTypeTitle, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Style="{StaticResource BoldLabel}" Text="Dish type:" />
+                            <Label Text="{Binding DishTypeTitle, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Label Style="{StaticResource BoldLabel}" Text="Difficulty:" />
+                            <Label Text="{Binding DifficultyName, Mode=TwoWay}" Style="{StaticResource DefaultLabel}"/>
+                        </StackLayout>
+                        <!--<StackLayout Orientation="Horizontal" Padding="5">
+                            <ListView ItemsSource="{Binding RecipeSteps}" HeightRequest="200">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Spacing="3" Padding="10">
+                                                <Label Style="{StaticResource BoldLabel}" Text="Description:" />
+                                                <Frame Style="{StaticResource EntryFrame}">
+                                                    <Entry Text="{Binding Description, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                </Frame>    
+                                                <Label Style="{StaticResource BoldLabel}" Text="Position:" />
+                                                <Frame Style="{StaticResource EntryFrame}">
+                                                    <Entry Text="{Binding Position, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                </Frame> 
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>-->
+                        <StackLayout Orientation="Horizontal" Margin="5">
+                            <Button Style="{StaticResource CancelButton}" Text="Cancel" Command="{Binding CancelCommand}" ></Button>
+                            <Button Style="{StaticResource DefaultButton}" Text="Delete" Command="{Binding DeleteCommand}" ></Button>
+                            <Button Style="{StaticResource DefaultButton}" Text="Edit" Command="{Binding EditItemCommand}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

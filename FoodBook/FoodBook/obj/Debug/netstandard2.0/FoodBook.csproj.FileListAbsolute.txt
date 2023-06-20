@@ -1,0 +1,192 @@
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.AssemblyReference.cache
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CuisinesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\DishesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForCuisinePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForDishPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeRecipesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\EditCuisineTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\NewCuisineTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\EditDifficultyPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\NewDifficultyPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypeDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\EditDishTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\NewDishTypePage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\EditIngredientsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\NewIngredientsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\EditRecipesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\NewRecipesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\EditUnitsOMPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\NewUnitsOMPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMDetailsPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMPage.xaml.g.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfoInputs.cache
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfo.cs
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.CoreCompileInputs.cache
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.deps.json
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.dll
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.dll
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\refint\FoodBook.dll
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\48505\Desktop\PROJEKT_MOBILKI_FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\ref\FoodBook.dll
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.deps.json
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.dll
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.AssemblyReference.cache
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CuisinesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\DishesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForCuisinePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForDishPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeRecipesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\EditCuisineTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\NewCuisineTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\EditDifficultyPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\NewDifficultyPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypeDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\EditDishTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\NewDishTypePage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\EditIngredientsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\NewIngredientsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\EditRecipesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\NewRecipesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\EditUnitsOMPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\NewUnitsOMPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMDetailsPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMPage.xaml.g.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfoInputs.cache
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfo.cs
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.CoreCompileInputs.cache
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.dll
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\refint\FoodBook.dll
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\klaud\Downloads\FOODBOOK\FoodBook\FoodBook\obj\Debug\netstandard2.0\ref\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.deps.json
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.AssemblyReference.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CuisinesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\DishesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForCuisinePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForDishPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeRecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\EditCuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\NewCuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\EditDifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\NewDifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypeDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\EditDishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\NewDishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\EditIngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\NewIngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\EditRecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\NewRecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\Styles.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\EditUnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\NewUnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfoInputs.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfo.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.CoreCompileInputs.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\refint\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FBv12\FoodBook\FoodBook\obj\Debug\netstandard2.0\ref\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.AssemblyReference.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CuisinesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CustomControll\DishTypeCustomControl.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\CustomControll\LatestRecipesCustomControl.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\DishesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeDetailsForClientPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForCuisinePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipeForDishPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\ClientV\RecipePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypeDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\CuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\EditCuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\CuisineTypeV\NewCuisineTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\DifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\EditDifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DifficultyV\NewDifficultyPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypeDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\DishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\EditDishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\DishTypeV\NewDishTypePage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\EditIngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\IngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\IngredientsV\NewIngredientsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\EditRecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\NewRecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\RecipesV\RecipesPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\Styles.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\EditUnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\NewUnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMDetailsPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\Views\UnitsOfMeasurementsV\UnitsOMPage.xaml.g.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfoInputs.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.AssemblyInfo.cs
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.csproj.CoreCompileInputs.cache
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\refint\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.deps.json
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.dll
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\bin\Debug\netstandard2.0\FoodBook.pdb
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Damian\Desktop\Zadania studia\SEMESTR 6\Mobilne\Projekt\FoodBook\FoodBook\obj\Debug\netstandard2.0\ref\FoodBook.dll

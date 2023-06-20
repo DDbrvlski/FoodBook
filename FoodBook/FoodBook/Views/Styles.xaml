@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             >
+    <Color x:Key="Dark">#1A1A1A</Color>
+    <Color x:Key="Light">#F9F7F5</Color>
+    <Color x:Key="Secondary">#2a2a2a</Color>
+    <Color x:Key="Triary">#3a3a3a</Color>
+    <Color x:Key="Accent">#3F579D</Color>
+    <Color x:Key="Red">#dc3545</Color>
+
+    <Style x:Key="SwiftStack" ApplyToDerivedTypes="true" TargetType="StackLayout">
+        <Setter Property="Spacing" Value="3" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="Background" Value="#1a1a1a" />
+    </Style>
+    <Style x:Key="SwiftFrame" ApplyToDerivedTypes="true" TargetType="Frame">
+        <Setter Property="CornerRadius" Value="8" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Background" Value="#2a2a2a" />
+    </Style>
+    <Style x:Key="DefaultButton" ApplyToDerivedTypes="true" TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Background" Value="#3F579D" />
+    </Style>
+    <Style x:Key="CancelButton" ApplyToDerivedTypes="true" TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="Padding" Value="10" />
+        <Setter Property="Background" Value="#dc3545" />
+    </Style>
+    <Style x:Key="TitleLabel" ApplyToDerivedTypes="true" TargetType="Label">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="HorizontalTextAlignment" Value="Start" />
+    </Style>
+    <Style x:Key="BoldLabel" ApplyToDerivedTypes="true" TargetType="Label">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+    <Style x:Key="DefaultLabel" ApplyToDerivedTypes="true" TargetType="Label">
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="Margin" Value="10,0,0,0" />
+    </Style>
+    <Style x:Key="DefaultEntry" ApplyToDerivedTypes="true" TargetType="Entry">
+        <Setter Property="TextColor" Value="#1a1a1a" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="Background" Value="white" />
+        <Setter Property="Padding" Value="2" />
+        <Style.Triggers>
+            <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                <Setter Property="BackgroundColor" Value="#ddd" />
+                <Setter Property="TextColor" Value="#1a1a1a" />
+            </Trigger>
+            <Trigger TargetType="Entry" Property="IsFocused" Value="False">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="#1a1a1a" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="DefaultPicker" ApplyToDerivedTypes="true" TargetType="Picker">
+        <Setter Property="TextColor" Value="#1a1a1a" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="Background" Value="white" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup>
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="White" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="PointerOver">
+                        <VisualState.Setters>
+                            <Setter Property="BackgroundColor" Value="#ddd" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+        <Style.Triggers>
+            <Trigger TargetType="Picker" Property="IsEnabled" Value="True">
+                <Setter Property="BackgroundColor" Value="#ddd" />
+                <Setter Property="TextColor" Value="#1a1a1a" />
+            </Trigger>
+            <Trigger TargetType="Picker" Property="IsEnabled" Value="False">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="TextColor" Value="#1a1a1a" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="EntryFrame" ApplyToDerivedTypes="true" TargetType="Frame">
+        <Setter Property="Background" Value="#2a2a2a" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="IsClippedToBounds" Value="True" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+    <Style x:Key="DefaultRefreshView" ApplyToDerivedTypes="true" TargetType="RefreshView">
+        <Setter Property="Background" Value="#1a1a1a" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="5" />
+    </Style>
+
+    <Style x:Key="PageListLabel" ApplyToDerivedTypes="true" TargetType="Label">
+        <Setter Property="TextColor" Value="#F9F7F5" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="LineBreakMode" Value="NoWrap" />
+        <Setter Property="FontAttributes" Value="None" />
+        <Setter Property="FontFamily" Value="Roboto" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+    <Style x:Key="ListImageFilled" ApplyToDerivedTypes="true" TargetType="Image">
+        <Setter Property="Aspect" Value="AspectFill" />
+        <Setter Property="HeightRequest" Value="120" />
+    </Style>
+    <Style x:Key="ListSwiftElement" ApplyToDerivedTypes="true" TargetType="StackLayout">
+        <Setter Property="Margin" Value="1" />
+        <Setter Property="Padding" Value="12" />
+        <Setter Property="Orientation" Value="Horizontal" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    <Style x:Key="ListFrame" ApplyToDerivedTypes="true" TargetType="Frame">
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="Background" Value="#2a2a2a" />
+    </Style>
+    <Style x:Key="ClippingCornerFrame" ApplyToDerivedTypes="true" TargetType="Frame">
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="IsClippedToBounds" Value="True" />
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+    <Style x:Key="ClippedCornerImage" ApplyToDerivedTypes="true" TargetType="Image">
+        <Setter Property="Aspect" Value="AspectFill" />
+        <Setter Property="HeightRequest" Value="300" />
+    </Style>
+
+</ResourceDictionary>

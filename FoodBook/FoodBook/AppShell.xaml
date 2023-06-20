@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:FoodBook.Views"
+       xmlns:localD="clr-namespace:FoodBook.Views.DifficultyV"
+       xmlns:localUOM="clr-namespace:FoodBook.Views.UnitsOfMeasurementsV"
+       xmlns:localCT="clr-namespace:FoodBook.Views.CuisineTypeV"
+       xmlns:localDT="clr-namespace:FoodBook.Views.DishTypeV"
+       xmlns:localI="clr-namespace:FoodBook.Views.IngredientsV"
+       xmlns:localR="clr-namespace:FoodBook.Views.RecipesV"
+       xmlns:localC="clr-namespace:FoodBook.Views.ClientV"
+       Title="FoodBook"
+       FlyoutBackgroundColor="#1a1a1a"
+       x:Class="FoodBook.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="#1a1a1a" />
+                <Setter Property="Shell.ForegroundColor" Value="white" />
+                <Setter Property="Shell.TitleColor" Value="#fff" />
+                <Setter Property="Shell.DisabledColor" Value="white" />
+                <Setter Property="Shell.UnselectedColor" Value="#F9F7F5" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#1a1a1a" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="#F9F7F5"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#F9F7F5"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="#F9F7F5"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+
+            <!--
+            Default Styles for all Flyout Items
+            https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
+            -->
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="#F9F7F5"></Setter>
+            </Style>
+            <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{x:OnPlatform UWP=Transparent, iOS=White}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="#F9F7F5" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#3F579D" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <!--
+            Custom Style you can apply to any Flyout Item
+            -->
+            <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="#F9F7F5" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home"
+                          Icon="Pics/home.png"
+                          Route="AboutPage"
+                          ContentTemplate="{DataTemplate local:AboutPage}"/>
+        <ShellContent Title="Dishes"
+                          Route="DishesPage"
+                          Icon="Pics/dish.png"
+                          ContentTemplate="{DataTemplate localC:DishesPage}" />
+        <ShellContent Title="Cuisines"
+                          Icon="Pics/cuisine.png"
+                          Route="CuisinesPage"
+                          ContentTemplate="{DataTemplate localC:CuisinesPage}" />
+        <ShellContent Title="Recipes"
+                          Icon="Pics/spoon.png"
+                          Route="RecipePage"
+                          ContentTemplate="{DataTemplate localC:RecipePage}" />
+    </FlyoutItem>
+
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Difficulty"
+                          Icon="Pics/levels.png"
+                          Route="DifficultyPage"
+                          ContentTemplate="{DataTemplate localD:DifficultyPage}"/>
+        <ShellContent Title="Units"
+                          Route="UnitsOMPage"
+                          Icon="Pics/units.png"
+                          ContentTemplate="{DataTemplate localUOM:UnitsOMPage}" />
+        <ShellContent Title="Recipes"
+                          Icon="Pics/recipes.png"
+                          Route="RecipesPage"
+                          ContentTemplate="{DataTemplate localR:RecipesPage}" />
+        <ShellContent Title="Ingredients"
+                          Icon="Pics/spoon.png"
+                          Route="IngredientsPage"
+                          ContentTemplate="{DataTemplate localI:IngredientsPage}" />
+        <ShellContent Title="Dish Type"
+                          Icon="Pics/food.png"
+                          Route="DishTypePage"
+                          ContentTemplate="{DataTemplate localDT:DishTypePage}" />
+        <ShellContent Title="Cuisine Type"
+                          Icon="Pics/cuisine.png"
+                          Route="CuisineTypePage"
+                          ContentTemplate="{DataTemplate localCT:CuisineTypePage}" />
+    </FlyoutItem>
+
+
+
+</Shell>

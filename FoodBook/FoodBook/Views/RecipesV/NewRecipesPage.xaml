@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.RecipesV.NewRecipesPage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="New Item">
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="../Styles.xaml"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource SwiftStack}">
+            <Frame Style="{StaticResource SwiftFrame}">
+                <ScrollView>
+                    <StackLayout Padding="0">
+                        <FlexLayout AlignContent="Start" JustifyContent="SpaceBetween" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                            <Label Style="{StaticResource TitleLabel}" Text="New recipe"/>
+                            <Button ImageSource="Pics/close.png" BackgroundColor="Transparent" Command="{Binding CancelCommand}">
+                            </Button>
+                        </FlexLayout>
+                        <BoxView Margin="10,0,10,0" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Title:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding Title, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Preparation time:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding MakingTime, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Label Text="Cuisine type:" Style="{StaticResource DefaultLabel}"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Picker
+                                    Style="{StaticResource DefaultPicker}"
+                                    ItemsSource="{Binding CuisineTypesList}"
+                                    SelectedItem="{Binding Id, Mode=TwoWay}"
+                                    ItemDisplayBinding="{Binding Title, Mode=TwoWay}"
+                                    SelectedIndex="{Binding IdCuisineType, Mode=TwoWay}">
+                                </Picker>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Padding="5">
+                            <Label Text="Dish type:" Style="{StaticResource DefaultLabel}"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Picker
+                                    Style="{StaticResource DefaultPicker}"
+                                    ItemsSource="{Binding DishTypesList}"
+                                    SelectedItem="{Binding Id, Mode=TwoWay}"
+                                    ItemDisplayBinding="{Binding Title, Mode=TwoWay}"
+                                    SelectedIndex="{Binding IdDishType, Mode=TwoWay}">
+                                </Picker>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Padding="5">
+                            <Label Text="Difficulty:" Style="{StaticResource DefaultLabel}"/>
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Picker
+                                    Style="{StaticResource DefaultPicker}"
+                                    ItemsSource="{Binding DifficultyList}"
+                                    SelectedItem="{Binding Id, Mode=TwoWay}"
+                                    ItemDisplayBinding="{Binding Title, Mode=TwoWay}"
+                                    SelectedIndex="{Binding IdDifficulty, Mode=TwoWay}">
+                                </Picker>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Image Title:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding ImageTitle, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Image URL:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <Entry Text="{Binding ImageURL, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Ingredients:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <ListView ItemsSource="{Binding IngredientsInRecipeTemp}" HeightRequest="200">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Frame Style="{StaticResource EntryFrame}" Margin="0,0,0,10">
+                                                    <StackLayout Spacing="3" Padding="10" BackgroundColor="{StaticResource Dark}">
+                                                        <FlexLayout  AlignContent="Start" JustifyContent="SpaceBetween" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                                                            <Label Style="{StaticResource DefaultLabel}" FontSize="18" Text="Ingredient:"/>
+                                                            <Button Margin="5" HeightRequest="30" WidthRequest="30" ImageSource="Pics/trash.png" BackgroundColor="{StaticResource Red}" CornerRadius="60" Command="{Binding RemoveCommand}"></Button>
+                                                        </FlexLayout>
+                                                        <BoxView Margin="10,0,10,5" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                                                        <Frame Style="{StaticResource EntryFrame}">
+                                                            <Picker
+                                                                Style="{StaticResource DefaultPicker}"
+                                                                ItemsSource="{Binding IngredientsInRecipeList}"
+                                                                SelectedItem="{Binding Id, Mode=TwoWay}"
+                                                                ItemDisplayBinding="{Binding Title, Mode=TwoWay}"
+                                                                SelectedIndex="{Binding IdIngredient, Mode=TwoWay}">
+                                                            </Picker>
+                                                        </Frame>
+                                                        <Label Style="{StaticResource DefaultLabel}" FontSize="16" Text="Amount:"/>
+                                                        <Frame Style="{StaticResource EntryFrame}">
+                                                            <Entry Text="{Binding Amount, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                        </Frame>
+                                                        <Label Style="{StaticResource DefaultLabel}" FontSize="16" Text="Unit:"/>
+                                                        <Frame Style="{StaticResource EntryFrame}">
+                                                            <Entry Text="{Binding UnitTitle, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                        </Frame>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Frame>
+                            <Button Style="{StaticResource DefaultButton}" Margin="5" Text="Add ingredient" Command="{Binding AddIngredientCommand}" ></Button>
+                        </StackLayout>
+
+                        <StackLayout Padding="5">
+                            <Label Style="{StaticResource DefaultLabel}" Text="Recipe steps:" />
+                            <Frame Style="{StaticResource EntryFrame}">
+                                <ListView ItemsSource="{Binding RecipeSteps}" HeightRequest="200">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Frame Style="{StaticResource EntryFrame}" Margin="0,0,0,10">
+                                                    <StackLayout Spacing="3" Padding="10" BackgroundColor="{StaticResource Dark}">
+                                                        <FlexLayout  AlignContent="Start" JustifyContent="SpaceBetween" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                                                            <Label Style="{StaticResource DefaultLabel}" FontSize="18" Text="New step:"/>
+                                                            <Button Margin="5" HeightRequest="30" WidthRequest="30" ImageSource="Pics/trash.png" BackgroundColor="{StaticResource Red}" CornerRadius="60" Command="{Binding RemoveCommand}"></Button>
+                                                        </FlexLayout>
+                                                        <BoxView Margin="10,0,10,5" BackgroundColor="#555" HeightRequest="1" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                                                        <Label Style="{StaticResource DefaultLabel}" FontSize="16" Text="Description:"/>
+                                                        <Frame Style="{StaticResource EntryFrame}">
+                                                            <Entry Text="{Binding Description, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                        </Frame>
+                                                        <Label Style="{StaticResource DefaultLabel}" FontSize="16" Text="Position:"/>
+                                                        <Frame Style="{StaticResource EntryFrame}">
+                                                            <Entry Text="{Binding Position, Mode=TwoWay}" Style="{StaticResource DefaultEntry}" />
+                                                        </Frame>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Frame>
+                        </StackLayout>
+                        <Button Style="{StaticResource DefaultButton}" Margin="5" Text="Add new step" Command="{Binding AddStepCommand}" ></Button>
+                        <StackLayout Orientation="Horizontal" Margin="5">
+                            <Button Style="{StaticResource CancelButton}" Text="Cancel" Command="{Binding CancelCommand}"></Button>
+                            <Button Style="{StaticResource DefaultButton}" Text="Save" Command="{Binding SaveCommand}" ></Button>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

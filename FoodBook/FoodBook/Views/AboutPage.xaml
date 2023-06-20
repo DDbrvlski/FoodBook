@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.AboutPage"
+             xmlns:vm="clr-namespace:FoodBook.ViewModels"
+             xmlns:controls ="clr-namespace:FoodBook.Views.ClientV.CustomControll"
+             Title="Main page">
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#FBB03B</Color>
+            <Color x:Key="MainBG">#1a1a1a</Color>
+            <Color x:Key="DarkText">#1a1a1a</Color>
+            <Color x:Key="LightText">#FAFAFA</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid Margin="0" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <StackLayout Margin="0" BackgroundColor="{StaticResource MainBG}" Padding="30,24,30,24" Orientation="Vertical">
+
+
+                <StackLayout>
+                    <Image Source="Pics/logowhite.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="80"  />
+                    <Label Text="Browse categories" FontSize="Title" TextColor="{StaticResource PrimaryLight}"/>
+                    <controls:DishTypeCustomControl/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Latest recipes" Margin="5,0,5,0"  FontSize="Title" TextColor="{StaticResource PrimaryLight}"/>
+                    <controls:LatestRecipesCustomControl/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
+

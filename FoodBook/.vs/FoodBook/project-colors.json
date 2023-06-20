@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "988937bf-4963-443b-b529-697cadeeb7b1": {
+      "ProjectGuid": "988937bf-4963-443b-b529-697cadeeb7b1",
+      "DisplayName": "FoodBook",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a6cb2f68-0726-4c6c-a074-cc254f3899f2": {
+      "ProjectGuid": "a6cb2f68-0726-4c6c-a074-cc254f3899f2",
+      "DisplayName": "FoodBook.UWP",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

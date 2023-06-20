@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FoodBook.Views.RecipesV.RecipesPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:FoodBook.ViewModels.RecipesVM"  
+             xmlns:model="clr-namespace:FoodBook.Service.Reference"  
+             x:Name="BrowseItemsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="../Styles.xaml"/>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="Pics/add.png" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <RefreshView Style="{StaticResource DefaultRefreshView}" x:DataType="local:RecipesViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+        <CollectionView x:Name="ItemsListView"
+                ItemsSource="{Binding Items}"
+                SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="5" x:DataType="model:RecipeForView">
+                        <Frame Style="{StaticResource ListFrame}">
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Style="{StaticResource ListSwiftElement}">
+                                    <Label Text="{Binding Id}" FontAttributes="Bold" Style="{DynamicResource PageListLabel}"/>
+                                    <Label Text="{Binding Title}" Style="{DynamicResource PageListLabel}"/>
+                                </StackLayout>
+                                <Image Source="{Binding ImageURL}" Style="{StaticResource ListImageFilled}"
+                                        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                NumberOfTapsRequired="1"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type local:RecipesViewModel}}, Path=ItemTapped}"		
+                                CommandParameter="{Binding .}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </RefreshView>
+</ContentPage>
